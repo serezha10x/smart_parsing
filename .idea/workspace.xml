@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="98547bea-cd1c-4fc4-b071-d1078c3bf592" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="nirs.com" id="aac0f96b-2940-437d-9794-567742a47d4e" name="OS" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpword" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/pclzip/pclzip" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-escaper" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/common" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1YXaqnfktFiharrFBN8H0BsCSJz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\nirs.com\application\parser" />
+      <recent name="C:\OSPanel\domains\nirs.com\application" />
+      <recent name="C:\OSPanel\domains\nirs.com\config" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="nirs.com/" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="OS">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98547bea-cd1c-4fc4-b071-d1078c3bf592" name="Default Changelist" comment="" />
+      <created>1583091586463</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583091586463</updated>
+      <workItem from="1583091591778" duration="486000" />
+      <workItem from="1583681240606" duration="1406000" />
+      <workItem from="1583749556378" duration="5442000" />
+      <workItem from="1583817298248" duration="4590000" />
+      <workItem from="1583911313510" duration="3511000" />
+      <workItem from="1584199045880" duration="2701000" />
+      <workItem from="1584252927624" duration="3470000" />
+      <workItem from="1584259171125" duration="2090000" />
+      <workItem from="1584442268177" duration="2396000" />
+      <workItem from="1584549463385" duration="5644000" />
+      <workItem from="1585123273771" duration="14315000" />
+      <workItem from="1585494428520" duration="842000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="22" key="#Notifications" timestamp="1585494790112">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1585494790112" />
+    <state x="263" y="19" key="#Servers" timestamp="1583091731522">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="263" y="19" key="#Servers/0.0.1366.728@0.0.1366.728" timestamp="1583091731522" />
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583091747346">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1583091747346" />
+    <state x="182" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585132115608">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="182" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1585132115608" />
+    <state x="459" y="277" key="ComposerInitDialogKey" timestamp="1585494680801">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="459" y="277" key="ComposerInitDialogKey/0.0.1366.728@0.0.1366.728" timestamp="1585494680801" />
+    <state width="1323" height="156" key="GridCell.Tab.0.bottom" timestamp="1583681287453">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="156" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583681287453" />
+    <state width="1323" height="156" key="GridCell.Tab.0.center" timestamp="1583681287451">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="156" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583681287451" />
+    <state width="1323" height="156" key="GridCell.Tab.0.left" timestamp="1583681287449">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="156" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583681287449" />
+    <state width="1323" height="156" key="GridCell.Tab.0.right" timestamp="1583681287452">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="156" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583681287452" />
+    <state width="1323" height="156" key="GridCell.Tab.1.bottom" timestamp="1583681286392">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="156" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583681286392" />
+    <state width="1323" height="156" key="GridCell.Tab.1.center" timestamp="1583681286390">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="156" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1583681286390" />
+    <state width="1323" height="156" key="GridCell.Tab.1.left" timestamp="1583681286390">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="156" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1583681286390" />
+    <state width="1323" height="156" key="GridCell.Tab.1.right" timestamp="1583681286391">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="156" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1583681286391" />
+    <state width="1323" height="156" key="GridCell.Tab.2.bottom" timestamp="1583681286396">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="156" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583681286396" />
+    <state width="1323" height="156" key="GridCell.Tab.2.center" timestamp="1583681286394">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="156" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1583681286394" />
+    <state width="1323" height="156" key="GridCell.Tab.2.left" timestamp="1583681286393">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="156" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1583681286393" />
+    <state width="1323" height="156" key="GridCell.Tab.2.right" timestamp="1583681286395">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="156" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1583681286395" />
+    <state x="513" y="178" key="NewPhpClassDialog" timestamp="1585132124379">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="513" y="178" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1585132124379" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1585135405675">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1585135405675" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1585494437607">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585494437607" />
+    <state x="406" y="0" width="553" height="688" key="refactoring.ChangeSignatureDialog" timestamp="1584257282196">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="406" y="0" width="553" height="688" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1584257282196" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1583751681758">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1583751681758" />
+  </component>
+</project>
