@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98547bea-cd1c-4fc4-b071-d1078c3bf592" name="Default Changelist" comment="" />
+    <list default="true" id="98547bea-cd1c-4fc4-b071-d1078c3bf592" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nirs.com.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nirs.com.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/ParserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/ParserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/parser/ParserRegex.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/parser/ParserRegex.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +20,9 @@
     <execution>
       <executable path="composer" />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
@@ -26,9 +37,21 @@
       <path value="$PROJECT_DIR$/vendor/pclzip/pclzip" />
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-escaper" />
       <path value="$PROJECT_DIR$/vendor/phpoffice/common" />
+      <path value="$PROJECT_DIR$/vendor/gabordemooij/redbean" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/yooper/nicknames" />
+      <path value="$PROJECT_DIR$/vendor/yooper/php-text-analysis" />
+      <path value="$PROJECT_DIR$/vendor/yooper/stop-words" />
+      <path value="$PROJECT_DIR$/vendor/wamania/php-stemmer" />
+      <path value="$PROJECT_DIR$/vendor/camspiers/porter-stemmer" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/cijic/phpmorphy" />
     </include_path>
   </component>
   <component name="ProjectId" id="1YXaqnfktFiharrFBN8H0BsCSJz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -36,6 +59,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -72,7 +96,8 @@
       <workItem from="1584442268177" duration="2396000" />
       <workItem from="1584549463385" duration="5644000" />
       <workItem from="1585123273771" duration="14315000" />
-      <workItem from="1585494428520" duration="842000" />
+      <workItem from="1585494428520" duration="24016000" />
+      <workItem from="1585638527461" duration="19021000" />
     </task>
     <servers />
   </component>
@@ -96,6 +121,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="182" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1585132115608" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585509322742">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1585509322742" />
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1585636161498">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1585636161498" />
     <state x="459" y="277" key="ComposerInitDialogKey" timestamp="1585494680801">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -148,22 +181,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="156" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1583681286395" />
-    <state x="513" y="178" key="NewPhpClassDialog" timestamp="1585132124379">
+    <state x="513" y="178" key="NewPhpClassDialog" timestamp="1585635092523">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="513" y="178" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1585132124379" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1585135405675">
+    <state x="513" y="178" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1585635092523" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1585588372510">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1585135405675" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1585494437607">
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1585588372509" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1585638557433">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585494437607" />
-    <state x="406" y="0" width="553" height="688" key="refactoring.ChangeSignatureDialog" timestamp="1584257282196">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585638557433" />
+    <state x="406" y="0" width="553" height="688" key="refactoring.ChangeSignatureDialog" timestamp="1585505439122">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="406" y="0" width="553" height="688" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1584257282196" />
+    <state x="406" y="0" width="553" height="688" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1585505439122" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1583751681758">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -7,6 +7,17 @@
       <path value="$PROJECT_DIR$/vendor/pclzip/pclzip" />
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-escaper" />
       <path value="$PROJECT_DIR$/vendor/phpoffice/common" />
+      <path value="$PROJECT_DIR$/vendor/gabordemooij/redbean" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/yooper/nicknames" />
+      <path value="$PROJECT_DIR$/vendor/yooper/php-text-analysis" />
+      <path value="$PROJECT_DIR$/vendor/yooper/stop-words" />
+      <path value="$PROJECT_DIR$/vendor/wamania/php-stemmer" />
+      <path value="$PROJECT_DIR$/vendor/camspiers/porter-stemmer" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/cijic/phpmorphy" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7" />

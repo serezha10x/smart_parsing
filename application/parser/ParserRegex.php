@@ -6,12 +6,14 @@ namespace application\parser;
 
 class ParserRegex
 {
-    private $source_format;
-    private $permit_formats;
-    private $source;
+    private $text;
     private $ukr_alph = array('с', 'а', 'в', 'к', 'о', 'в', 'е');
     private $rus_alph = array('с', 'а', 'в', 'к', 'о', 'в', 'е');
 
+
+    public function __construct(&$text) {
+        $this->text = $text;
+    }
 
     private function GetSourceFromForm(): string
     {
@@ -20,14 +22,12 @@ class ParserRegex
 
     public function run()
     {
-        $reader = new Reader($this->GetSourceFromForm());
-        $text = $reader->convertToText();
         $patterns = require __DIR__ . "/regex_patterns.php";
 
-        echo $text;
+        echo $this->text;
 
         foreach ($patterns as $pattern) {
-            preg_match_all($pattern, $text, $matches);
+            preg_match_all($pattern, $this->text, $matches);
             $matches[0] = array_unique($matches[0]);
             echo "<pre>";
             var_dump($matches[0]);
