@@ -26,9 +26,9 @@ class View {
 		}
 	}
 
-	public function redirect($url) {
-		header('location: '.$url);
-		exit;
+	static public function redirect($url) {
+		header('Location: '.$url);
+
 	}
 
 	public static function errorCode($code) {

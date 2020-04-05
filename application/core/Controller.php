@@ -9,14 +9,15 @@ abstract class Controller {
     public $route;
     public $view;
     public $acl;
+    protected $model;
 
     public function __construct($route) {
         $this->route = $route;
-        /*if (!$this->checkAcl()) {
+        if (!$this->checkAcl()) {
             View::errorCode(403);
-        }*/
+        }
         $this->view = new View($route);
-        //$this->model = $this->loadModel($route['controller']);
+        $this->model = $this->loadModel($route['controller']);
     }
 
     public function loadModel($name) {
@@ -31,13 +32,13 @@ abstract class Controller {
         if ($this->isAcl('all')) {
             return true;
         }
-        elseif (isset($_SESSION['authorize']['id']) and $this->isAcl('authorize')) {
+        elseif (isset($_SESSION['authorize']['verify']) and $this->isAcl('authorize')) {
             return true;
         }
-        elseif (!isset($_SESSION['authorize']['id']) and $this->isAcl('guest')) {
+        elseif (!isset($_SESSION['authorize']['verify']) and $this->isAcl('guest')) {
             return true;
         }
-        elseif (isset($_SESSION['admin']) and $this->isAcl('admin')) {
+        elseif (isset($_SESSION['authorize']['admin']) and $_SESSION['authorize']['admin'] != 0 and $this->isAcl('admin')) {
             return true;
         }
         return false;
