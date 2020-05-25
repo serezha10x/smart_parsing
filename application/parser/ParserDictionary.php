@@ -2,7 +2,8 @@
 
 
 namespace application\parser;
-require_once($_SERVER['DOCUMENT_ROOT'] . '/application/frameworks/phpmorphy-0.3.7/src/common.php');
+//require_once($_SERVER['DOCUMENT_ROOT'] . '/application/frameworks/phpmorphy-0.3.7/src/common.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php");
 
 use phpMorphy;
 use phpMorphy_Exception;
@@ -13,6 +14,7 @@ class ParserDictionary
     private $key_words;
     private $text;
     private $morphy;
+    private $num_max = 3;
 
     public function __construct(&$text) {
         $this->key_words = array();
@@ -25,12 +27,8 @@ class ParserDictionary
 
         $lang = 'ru_RU';
 
-        $opts = array(
-            'storage' => PHPMORPHY_STORAGE_FILE
-        );
-
         try {
-            $this->morphy = new phpMorphy($dir, $lang, $opts);
+            $this->morphy = new phpMorphy($dir, $lang);
         } catch(phpMorphy_Exception $e) {
             die('Error occured while creating phpMorphy instance: ' . $e->getMessage());
         }
@@ -47,6 +45,7 @@ class ParserDictionary
         $need_words = require __DIR__ . "/need_words.php";
 
         $array_defis = array();
+
         for ($i = 0; $i < $count; $i++) {
             if (mb_strlen($arr_words[$i]) <= 3) {
                 unset($arr_words[$i]);
@@ -69,50 +68,44 @@ class ParserDictionary
 
                 $result = $this->morphy->findWord($arr_words[$i], phpMorphy::IGNORE_PREDICT);
                 if ($result === false) {
-
                     // проверка на -
                     if (mb_strpos($arr_words[$i], "-")) {
                         $tmp = preg_split("@-@", $arr_words[$i]);
+                        $temp_array = array();
                         foreach ($tmp as $s) {
                             // добавляем слова по отдельности
-                            array_push($arr_words, $s);
-                        }
-                        // проверка на идентичность слов
-                        $isUnique = true;
-                        foreach ($array_defis as $arr_d) {
-                            if (!$this->isUnique($tmp, $arr_d)) {
-                                $isUnique = false;
-                                break;
+                            if (mb_strlen($s) >= 2) {
+                                if (mb_substr_count($s, 'Е') > 0) {
+                                    $true_change_word = $this->ChangeLetter($s, 'Е', 'Ё');
+                                    if ($true_change_word != NULL) {
+                                        $true_change_word = $this->morphy->lemmatize($true_change_word)[0];
+                                        array_push($arr_words, $true_change_word);
+                                        $temp_array[] = $true_change_word;
+                                        $count++;
+                                        continue;
+                                    }
+                                }
+                                $count++;
+                                array_push($arr_words, $s);
+                                $temp_array[] = $s;
                             }
                         }
-                        if ($isUnique) {
-                            $temp_array = array();
-                            foreach ($tmp as $t) {
-                                array_push($temp_array, $this->morphy->lemmatize($t)[0]);
-                            }
+
+                        if (!$this->isUnique($array_defis, $temp_array)) {
                             $array_defis[] = $temp_array;
                         }
+                        // проверка на идентичность слов
                         unset($arr_words[$i]);
-
-                        $count += count($tmp);
                         continue;
 
                     // проверка на Ё
-                    } else if (mb_substr_count($arr_words[$i], 'Е') > 0) {
-                        if ($change_words = $this->str_replace_once('Е', 'Ё', $arr_words[$i])) {
-                            $isExist = false;
-                            foreach ($change_words as $change_word) {
-                                $result = $this->morphy->findWord($change_word, phpMorphy::IGNORE_PREDICT);
-                                if ($result !== false) {
-                                    $isExist = true;
-                                    break;
-                                }
-                            }
-                            if ($isExist) {
-                                continue;
-                            } else {
-                                unset($arr_words[$i]);
-                            }
+                      } else if (mb_substr_count($arr_words[$i], 'Е') > 0) {
+                        $true_change_word = $this->ChangeLetter($arr_words[$i], 'Е', 'Ё');
+                        if ($true_change_word != NULL) {
+                            $arr_words[$i] = $true_change_word;
+                            continue;
+                        } else {
+                            unset($arr_words[$i]);
                         }
                     } else {
                         unset($arr_words[$i]);
@@ -121,14 +114,12 @@ class ParserDictionary
             }
         }
 
-        $num_max = 3;
         $arr_freq  = array_count_values($arr_words);
-        $maxes = $this->getMaxes($arr_freq, $num_max);
-
+        $maxes = $this->getMaxes($arr_freq, $this->num_max);
         $temp_array = array();
 
         foreach ($arr_freq as $key => $value) {
-            for ($i = 0; $i < $num_max; $i++) {
+            for ($i = 0; $i < $this->num_max; $i++) {
                 if ($value == $maxes[$i]) {
                     $key_word = $this->morphy->lemmatize($key)[0];
                     $this->key_words[] = $key_word;
@@ -147,28 +138,45 @@ class ParserDictionary
             }
         }
 
-        array_unique($this->key_words);
-        var_dump($this->key_words);
+        $stop_words = require ($_SERVER['DOCUMENT_ROOT'] . '/application/parser/stop_words.php');
+        foreach ($stop_words as $word) {
+            $this->key_words = array_diff($this->key_words, array($word));
+        }
+        $this->key_words = $this->ArrayUnique($this->key_words);
+
+        $dict_parse_text = "<br><br>Частотный анализ текста: <br>";
+        for ($i = 0; $i < count($this->key_words); $i++) {
+            if ($i != count($this->key_words) - 1) $dict_parse_text .= $this->key_words[$i] . ", ";
+            else $dict_parse_text .= $this->key_words[$i] . ".<br>";
+        }
+        $dict_parse_text .= "<br><br>";
+        return $dict_parse_text;
     }
 
 
-    private function isUnique($arr_1, $arr_2) : bool {
-        if (count($arr_1) != count($arr_2)) {
-            return true;
-        } else {
-            $k = 0;
-            $size = count($arr_1);
-            for($i = 0; $i < $size; $i++) {
-                if ($arr_1[$i] === $arr_2[$i]) {
-                    $k++;
+    private function isUnique($big_arr, $arr) : bool {
+        if (count($big_arr) == 0) {
+            return false;
+        }
+        foreach ($big_arr as $item) {
+            if (count($item) != count($arr)) {
+                continue;
+            } else {
+                $k = 0;
+                $size = count($item);
+                for ($i = 0; $i < $size; $i++) {
+                    if ($big_arr[$i] === $arr[$i]) {
+                        $k++;
+                    }
+                }
+                if ($k != $size) {
+                    return true;
+                } else {
+                    continue;
                 }
             }
-            if ($k == $size) {
-                return false;
-            } else {
-                return true;
-            }
         }
+        return false;
     }
 
 
@@ -197,18 +205,21 @@ class ParserDictionary
                     }
                 }
             }
+            if ($temp_max == 1) {
+                $this->num_max--;
+                continue;
+            }
             $maxes[$i] = $temp_max;
         }
         return $maxes;
     }
 
 
-    private function str_replace_once($search, $replace, $subject) {
+    private function str_replace_once($search, $replace, $subject) : array {
         $count = mb_substr_count($subject, 'Е');
         if ($count === 0) {
             return false;
         }
-
         $pos = 0;
         $change_words = array();
         for($i = 0; $i < $count; $i++) {
@@ -226,5 +237,34 @@ class ParserDictionary
         $out = $startString . $replacement . $endString;
 
         return $out;
+    }
+
+
+    function ChangeLetter($word, $search, $replace) {
+        if ($change_words = $this->str_replace_once($search, $replace, $word)) {
+            foreach ($change_words as $change_word) {
+                $result = $this->morphy->findWord($change_word, phpMorphy::IGNORE_PREDICT);
+                if ($result !== false) {
+                    return $change_word;
+                }
+            }
+        }
+        return NULL;
+    }
+
+
+    function ArrayUnique(array $arr) : array {
+        $result = array();
+        $elCounts = count($arr);
+
+        for ($i = 0; $i < count($arr); ++$i) {
+            foreach ($arr as $val) {
+                if ($arr[$i] === $val && !in_array($val, $result) && $arr[$i] != '') {
+                    $result[] = $arr[$i];
+                }
+            }
+        }
+
+        return $result;
     }
 }

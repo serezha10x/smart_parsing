@@ -7,7 +7,7 @@ use application\core\Controller;
 class MainController extends Controller {
 
 	public function indexAction() {
-		$this->view->render('Главная страница');
+	    $vars = ['login' => $_COOKIE['login']];
+		$this->view->render('Главная страница', $vars);
 	}
-
 }

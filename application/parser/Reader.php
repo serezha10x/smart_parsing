@@ -2,12 +2,15 @@
 
 namespace application\parser;
 
+use application\util\FileVerification;
+
 class Reader {
     private $filename;
 
     public function __construct($filePath) {
         $this->filename = $filePath;
     }
+
 
     private function read_doc() {
         $fileHandle = fopen($this->filename, "r");
@@ -17,11 +20,10 @@ class Reader {
         foreach($lines as $thisline)
         {
             $pos = strpos($thisline, chr(0x00));
-            if (($pos !== FALSE) || (strlen($thisline) == 0))
+            if (($pos !== FALSE)||(strlen($thisline)==0))
             {
-
             } else {
-                $outtext .= ($thisline . "</br>");
+                $outtext .= $thisline." ";
             }
         }
         $outtext = preg_replace("/[^a-zA-Z0-9\s\,\.\-\n\r\t@\/\_\(\)]/","",$outtext);
@@ -103,20 +105,19 @@ class Reader {
 
             $fileArray = pathinfo($this->filename);
             $file_ext = $fileArray['extension'];
-            $permit_format = require $_SERVER['DOCUMENT_ROOT'].'/application/config/formats.php';
 
-            foreach ($permit_format as $ext) {
-                if ($ext === $file_ext) {
-                    $isExist = true;
-                }
-            }
-            if (!$isExist) {
-                throw new Exception('This format is not supported');
+            if (!FileVerification::CheckFormat($file_ext)) {
+                throw new \Exception('This format is not supported');
             }
 
             switch ($file_ext) {
                 case 'doc':
-                    return $this->read_doc();
+                    $d = new doc();
+                    $d->read($this->filename);
+                    $text = $d->parse();
+                    $text = strip_tags($text);
+                    return mb_convert_encoding($text, "UTF-8", "auto");
+                    return $text;
                 case 'docx':
                     return $this->read_docx();
                 case 'xlsx':
@@ -124,10 +125,10 @@ class Reader {
                 case 'pptx':
                     return $this->read_pptx();
                 default:
-                    throw new Exception('This format is not supported');
+                    throw new \Exception('This format is not supported');
             }
         }
-        catch (Exception $ex)
+        catch (\Exception $ex)
         {
             die($ex->getMessage());
         }

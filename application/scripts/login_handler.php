@@ -1,12 +1,10 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT']."/application/core/View.php";
-
-use application\core\View;
-
-
-if (isset($_POST['login']) && isset($_POST['password'])) {
-    $_SESSION['authorize']['password'] = $_POST['password'];
-    $_SESSION['authorize']['login'] = $_POST['login'];
-    View::redirect('http://nirs.com');
+if (isset($_POST['submit'])) {
+    if (isset($_POST['login']) && isset($_POST['password'])) {
+        setcookie('login', $_POST['login'], time() + (86400 * 30), "/");
+        setcookie('password', password_hash($_POST['password'], PASSWORD_DEFAULT), time() + (86400 * 30), "/");
+        header('Location: http://nirs.com');
+        exit;
+    }
 }

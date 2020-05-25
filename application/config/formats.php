@@ -1,6 +1,5 @@
 <?php
 
     return array(
-        'doc', 'docx'
-
+        'doc', 'docx', 'pdf'
     );
