@@ -4,32 +4,34 @@
 namespace application\parser;
 
 
-class ParserRegex
+final class ParserRegex extends Parser
 {
-    private $text;
-    private $info;
-    private $ukr_alph = array('с', 'а', 'в', 'к', 'о', 'в', 'е');
-    private $rus_alph = array('с', 'а', 'в', 'к', 'о', 'в', 'е');
+    protected $text;
 
 
     public function __construct(&$text) {
-        $this->text = $text;
-        $this->info = array();
+        parent::__construct($text);
     }
 
 
-    public function run() {
-        $patterns = require __DIR__ . "/regex_patterns.php";
+    public function parse() {
+        $patterns = require __DIR__ . "/parser_config/regex_patterns.php";
         $parse_text = "<br>";
+        $info = array();
 
         foreach ($patterns as $pattern_name => $pattern) {
             $parse_text .= "<br>" . $pattern_name . ": ";
             preg_match_all($pattern, $this->text, $matches);
-            $this->info[$pattern_name] = array_unique($matches[0]);
-            $size = count($this->info[$pattern_name]);
+            $info[$pattern_name] = array_unique($matches[0]);
+            $size = count($info[$pattern_name]);
             for ($i = 0; $i < $size; $i++) {
-                if ($i == $size - 1) $parse_text .= $this->info[$pattern_name][$i] . ".<br>";
-                else $parse_text .= $this->info[$pattern_name][$i] . ", ";
+                if ($info[$pattern_name][$i] != '' and strlen($info[$pattern_name][$i]) > 1) {
+                    if ($i == $size - 1) {
+                        $parse_text .= $info[$pattern_name][$i] . ".<br>";
+                    } else {
+                        $parse_text .= $info[$pattern_name][$i] . ", ";
+                    }
+                }
             }
         }
 

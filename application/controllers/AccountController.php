@@ -13,18 +13,11 @@ class AccountController extends Controller {
     }
 
 	public function loginAction() {
-		$this->view->render('Вход');
+        $vars = ['login' => $_COOKIE['login']];
+        $this->view->render('Вход', $vars);
 	}
 
 	public function registerAction() {
 		$this->view->render('Регистрация');
 	}
-
-	public static function exitAction() {
-        if (isset($_COOKIE['login']) || isset($_COOKIE['password'])) {
-            setcookie('login', false, -1, '/');
-            setcookie('password', false, -1, '/');
-            Router::redirect("../");
-        }
-    }
 }

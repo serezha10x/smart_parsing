@@ -2,6 +2,8 @@
 
 namespace application\core;
 
+use application\config\Constants;
+use Exception;
 use PDO;
 
 abstract class Model {
@@ -21,7 +23,7 @@ abstract class Model {
 	public function __construct() {
         try {
             $this->pdo = new PDO('mysql:host='.self::$HOST.';dbname='.self::$DBNAME, self::$USERNAME, self::$PASSWORD);
-        } catch (\Exception $ex) {
+        } catch (Exception $ex) {
             View::errorCode(500);
         }
     }
@@ -31,7 +33,8 @@ abstract class Model {
             if (empty($login) or empty($password)) {
                 throw new Exception();
             }
-            $sql = 'SELECT * FROM `' . self::$USERS_TABLE . '` WHERE ' . self::$NAME_FIELD . ' = :login';
+
+            $sql = 'SELECT * FROM `' . self::USERS_TABLE . '` WHERE ' . self::NAME_FIELD . ' = :login';
             $stm = $this->pdo->prepare($sql, array(PDO::PARAM_STR));
             $stm->bindParam(':login', $login, PDO::PARAM_STR);
             $stm->execute();
@@ -39,12 +42,15 @@ abstract class Model {
             if ($stm->rowCount() == 0) {
                 throw new Exception();
             } else {
+
                 $row = $stm->fetch(PDO::FETCH_ASSOC);
-                if (password_verify($password, $row[self::$PASSWORD_FIELD])) {
-                    if ($row[self::$IS_ADMIN_FIELD] != 0) {
-                        setcookie("isAdmin", "1", time() + 86400, "/");
+                $is_verify = password_verify($password, $row[self::PASSWORD_FIELD]);
+                if ($is_verify) {
+
+                    if ($row[self::IS_ADMIN_FIELD] != 0) {
+                        setcookie(self::IS_ADMIN_FIELD, "1", time() + Constants::TIME_LIVE_COOKIES, "/");
                     } else {
-                        setcookie("isAdmin", "0", time() + 86400, "/");
+                        setcookie(self::IS_ADMIN_FIELD, "0", time() + Constants::TIME_LIVE_COOKIES, "/");
                     }
                     return true;
                 } else {
@@ -53,10 +59,13 @@ abstract class Model {
             }
 
         } catch (Exception $ex) {
-            View::errorCode(500);
+            if (isset($_COOKIE['login'])) setcookie('login', null, -1, "/");
+            if (isset($_COOKIE['password'])) setcookie('password', null, -1, "/");
+            if (isset($_COOKIE['is_admin'])) setcookie('is_admin', null, -1, "/");
+
+            //View::errorCode(500);
             return false;
         }
-        return false;
     }
 
     public function __destruct() {

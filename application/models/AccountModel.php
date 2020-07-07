@@ -2,6 +2,7 @@
 
 namespace application\models;
 
+use application\config\Constants;
 use application\core\Model;
 use application\core\View;
 use Exception;
@@ -15,15 +16,16 @@ class AccountModel extends Model
     }
 
     public function Login($login, $password) : bool {
-        if($this->check_user($login, $password)) {
-            setcookie('isAuthorized', '1', time() + 86400 * 30);
+        $is_auth = $this->check_user($login, $password);
+        if ($is_auth) {
+            setcookie('isAuthorized', '1', time() + Constants::TIME_LIVE_COOKIES);
             return true;
         } else {
             unset($_COOKIE['login']);
             setcookie('login', null, -1, "/");
             unset($_COOKIE['password']);
             setcookie('password', null, -1, "/");
-            setcookie('isAuthorized', '0', time() + 86400 * 30);
+            setcookie('isAuthorized', '0', time() + Constants::TIME_LIVE_COOKIES);
             return false;
         }
     }

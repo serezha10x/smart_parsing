@@ -23,14 +23,23 @@
                 <li class="nav-item">
                     <a class="nav-link" href="../parse">Парсинг</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <?php echo $login; ?>
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <button class="dropdown-item" name="">Выйти</button>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="../account/login">Аутентификация</a>
                 </li>
+                <?php
+                if (isset($_COOKIE['login']) and isset($_COOKIE['password'])) {
+                    echo '<li class="nav-item dropdown">
+                    <form action="/application/scripts/login_handler.php" method="post">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">';
+                    echo $login;
+                    echo '</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <button class="dropdown-item" name="logout">Выйти</button>
+                        </div>
+                    </form>
+                </li>';
+                }
+                ?>
             </ul>
         </div>
     </nav>

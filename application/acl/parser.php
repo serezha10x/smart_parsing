@@ -2,8 +2,8 @@
 
 return [
 	'all' => [
-		'parse'
-	],
+        'parse'
+    ],
 	'authorize' => [
 		//
 	],
@@ -11,6 +11,6 @@ return [
         //
 	],
 	'admin' => [
-		'parse'
+
 	],
 ];

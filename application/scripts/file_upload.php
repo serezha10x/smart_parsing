@@ -9,7 +9,7 @@ $json = array();
 if (isset($_POST['submit'])) {
         if (!empty($_FILES['upload_file'])) {
             $file_name = $_FILES['upload_file']['name'];
-            if (!isAvailableFileName(array("1_Драгун.doc"), $file_name)) {
+            if (!isAvailableFileName(array(''), $file_name)) {
                 if (isAvailableFileFormat($file_name)) {
                     $path = $_SERVER['DOCUMENT_ROOT'] . "/docs/";
                     $path .= basename($_FILES['upload_file']['name']);
@@ -26,11 +26,11 @@ if (isset($_POST['submit'])) {
                     }
                 } else {
                     $json += ['message' => 'false format'];
-                    //echo "false format";
+                    echo "false format";
                 }
             } else {
                 $json += ['message' => 'false name'];
-               // echo "false name";
+                echo "false name";
             }
         }
     }

@@ -2,36 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98547bea-cd1c-4fc4-b071-d1078c3bf592" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/application/config/Constants.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/nirs.com.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nirs.com.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReaderFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/acl/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/acl/account.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/acl/parser.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/acl/parser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/const.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/config/formats.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/formats.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/AccountController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/MainController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/ParserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/ParserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/core/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/core/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/core/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/View.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/AccountModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/AccountModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/parser/PHPQueryParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/parser/PHPQueryParser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/parser/ParserDictionary.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/parser/ParserDictionary.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/parser/ParserRegex.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/parser/ParserRegex.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/parser/Reader.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/parser/Reader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/parser/regex_patterns.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/parser/regex_patterns.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/parser/Reader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/parser/cfb.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/reader/Cfb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/parser/doc.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/reader/Doc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/parser/need_words.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/parser/parser_config/need_part_speech.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/parser/regex_patterns.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/parser/parser_config/regex_patterns.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/parser/stop_words.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/parser/parser_config/stop_words.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/scripts/file_upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/scripts/file_upload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/scripts/login_handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/scripts/login_handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/account/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/account/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/errors/403.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/errors/404.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/errors/500.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/layouts/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/layouts/default.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/main/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/main/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/parser/parse.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/parser/parse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/wiki/WikipediaApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/wiki/WikipediaApi.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html_pattern.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,16 +71,59 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" xdebug_debug_port="9001" />
   <component name="PhpServers">
     <servers>
-      <server host="nirs.com" id="aac0f96b-2940-437d-9794-567742a47d4e" name="OS" />
+      <server host="nirs.com\parse" id="aac0f96b-2940-437d-9794-567742a47d4e" name="OS" port="9001" use_path_mappings="true" />
+      <server host="nirs.com" id="757f1e57-164a-4ad6-a652-6195ebe92d66" name="nirs.com" />
     </servers>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.1-64x">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/cijic/phpmorphy" />
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/jaeger/phpquery-single" />
+      <path value="$PROJECT_DIR$/vendor/jeremeamia/superclosure" />
+      <path value="$PROJECT_DIR$/vendor/adam-lutka/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/adam-lutka/php-wndb" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/php-di/invoker" />
+      <path value="$PROJECT_DIR$/vendor/php-di/php-di" />
+      <path value="$PROJECT_DIR$/vendor/php-di/phpdoc-reader" />
+      <path value="$PROJECT_DIR$/vendor/yooper/nicknames" />
+      <path value="$PROJECT_DIR$/vendor/yooper/php-text-analysis" />
+      <path value="$PROJECT_DIR$/vendor/yooper/stop-words" />
+      <path value="$PROJECT_DIR$/vendor/camspiers/porter-stemmer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/vanderlee/php-sentence" />
+      <path value="$PROJECT_DIR$/vendor/wamania/php-stemmer" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/textrazor/textrazor-php" />
+      <path value="$PROJECT_DIR$/vendor/tecnickcom/tcpdf" />
+      <path value="$PROJECT_DIR$/vendor/smalot/pdfparser" />
+      <path value="$PROJECT_DIR$/vendor/diff/diff" />
+      <path value="$PROJECT_DIR$/vendor/data-values/data-values" />
+      <path value="$PROJECT_DIR$/vendor/wikimedia/assert" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/addwiki/mediawiki-api-base" />
+      <path value="$PROJECT_DIR$/vendor/addwiki/mediawiki-datamodel" />
+      <path value="$PROJECT_DIR$/vendor/addwiki/wikibase-api" />
+      <path value="$PROJECT_DIR$/vendor/serialization/serialization" />
+      <path value="$PROJECT_DIR$/vendor/wikibase/data-model-services" />
+      <path value="$PROJECT_DIR$/vendor/wikibase/data-model-serialization" />
+      <path value="$PROJECT_DIR$/vendor/wikibase/data-model" />
+      <path value="$PROJECT_DIR$/vendor/data-values/serialization" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
     </include_path>
   </component>
   <component name="ProjectId" id="1YXaqnfktFiharrFBN8H0BsCSJz" />
@@ -93,29 +139,61 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/application" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/reader" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\OSPanel\domains\nirs.com\application\views" />
-      <recent name="C:\OSPanel\domains\nirs.com\application\wiki" />
       <recent name="C:\OSPanel\domains\nirs.com\application\parser" />
-      <recent name="C:\OSPanel\domains\nirs.com\application" />
-      <recent name="C:\OSPanel\domains\nirs.com\config" />
+      <recent name="C:\OSPanel\domains\nirs.com\application\reader" />
+      <recent name="C:\OSPanel\domains\nirs.com\application\semantic\semantic_config" />
+      <recent name="C:\OSPanel\domains\nirs.com\application\parser\parser_config" />
+      <recent name="C:\OSPanel\domains\nirs.com\application\scripts" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\nirs.com\application\reader" />
       <recent name="C:\OSPanel\domains\nirs.com\application" />
       <recent name="C:\OSPanel\domains\nirs.com\application\views\library" />
       <recent name="C:\OSPanel\domains\nirs.com\application\wiki" />
       <recent name="C:\OSPanel\domains\nirs.com\application\parser" />
-      <recent name="C:\OSPanel\domains\nirs.com\application\acl" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Web Page.upload">
+    <configuration name="application" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner directory="$PROJECT_DIR$/application" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ReaderCreator.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/application/reader/ReaderCreator.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
+      <method v="2" />
+    </configuration>
     <configuration name="nirs.com/" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="OS">
       <method v="2" />
     </configuration>
+    <configuration name="parse" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="OS" start_url="/parse/">
+      <method v="2" />
+    </configuration>
+    <configuration name="upload" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="nirs.com" start_url="/http://nirs.com/application/scripts/file_upload.php">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="PHP Script.index.php" />
+      <item itemvalue="PHP Script.ReaderCreator.php" />
+      <item itemvalue="PHP Web Page.nirs.com/" />
+      <item itemvalue="PHP Web Page.parse" />
+      <item itemvalue="PHP Web Page.upload" />
+      <item itemvalue="PHPUnit.application" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.ReaderCreator.php" />
+        <item itemvalue="PHP Script.index.php" />
+        <item itemvalue="PHPUnit.application" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -149,7 +227,21 @@
       <workItem from="1589130257471" duration="3229000" />
       <workItem from="1589631661726" duration="39171000" />
       <workItem from="1589886882991" duration="18859000" />
-      <workItem from="1589960361973" duration="49995000" />
+      <workItem from="1589960361973" duration="57970000" />
+      <workItem from="1590586377810" duration="15349000" />
+      <workItem from="1590677459875" duration="11167000" />
+      <workItem from="1591030316345" duration="7244000" />
+      <workItem from="1591193506564" duration="7694000" />
+      <workItem from="1591533017763" duration="10282000" />
+      <workItem from="1591766087314" duration="1723000" />
+      <workItem from="1591780248183" duration="7696000" />
+      <workItem from="1591866510616" duration="6410000" />
+      <workItem from="1591964036216" duration="2027000" />
+      <workItem from="1592119375950" duration="4645000" />
+      <workItem from="1592247224487" duration="27385000" />
+      <workItem from="1592420008165" duration="2242000" />
+      <workItem from="1592463084302" duration="16018000" />
+      <workItem from="1594035844545" duration="14815000" />
     </task>
     <task id="LOCAL-00001" summary="Add PHPMorphy">
       <created>1585660650850</created>
@@ -169,34 +261,38 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add PHPMorphy" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="263" y="18" key="#CLI_Interpreters" timestamp="1591195896975">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="263" y="18" key="#CLI_Interpreters/0.0.1366.728@0.0.1366.728" timestamp="1591195896975" />
     <state x="275" y="22" key="#Notifications" timestamp="1585494790112">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1585494790112" />
-    <state x="263" y="19" key="#Servers" timestamp="1583091731522">
+    <state x="275" y="22" key="#PHP" timestamp="1591030396339">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="263" y="19" key="#Servers/0.0.1366.728@0.0.1366.728" timestamp="1583091731522" />
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583091747346">
+    <state x="275" y="22" key="#PHP/0.0.1366.728@0.0.1366.728" timestamp="1591030396339" />
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591198531895">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1583091747346" />
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1590239706832">
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1591198531895" />
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1594104955554">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1590239706832" />
-    <state x="182" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590240278101">
+    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1594104955554" />
+    <state x="182" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592292318289">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="182" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1590240278101" />
+    <state x="182" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1592292318289" />
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589887148886">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589887148886" />
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1589897180414">
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1592421366959">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1589897180414" />
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592421366959" />
     <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585660648804">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -205,77 +301,88 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="459" y="277" key="ComposerInitDialogKey/0.0.1366.728@0.0.1366.728" timestamp="1585494680801" />
-    <state width="1323" height="156" key="GridCell.Tab.0.bottom" timestamp="1586199440307">
+    <state x="458" y="105" key="FileChooserDialogImpl" timestamp="1590678123290">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="156" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586199440307" />
-    <state width="1323" height="156" key="GridCell.Tab.0.center" timestamp="1586199440307">
+    <state x="458" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590678123290" />
+    <state width="1323" height="156" key="GridCell.Tab.0.bottom" timestamp="1591252056084">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="156" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586199440307" />
-    <state width="1323" height="156" key="GridCell.Tab.0.left" timestamp="1586199440306">
+    <state width="1323" height="156" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591252056084" />
+    <state width="1323" height="156" key="GridCell.Tab.0.center" timestamp="1591252056083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="156" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586199440306" />
-    <state width="1323" height="156" key="GridCell.Tab.0.right" timestamp="1586199440307">
+    <state width="1323" height="156" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1591252056083" />
+    <state width="1323" height="156" key="GridCell.Tab.0.left" timestamp="1591252056083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="156" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586199440307" />
-    <state width="1323" height="156" key="GridCell.Tab.1.bottom" timestamp="1586199440308">
+    <state width="1323" height="156" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1591252056083" />
+    <state width="1323" height="156" key="GridCell.Tab.0.right" timestamp="1591252056083">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="156" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586199440308" />
-    <state width="1323" height="156" key="GridCell.Tab.1.center" timestamp="1586199440308">
+    <state width="1323" height="156" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1591252056083" />
+    <state width="1323" height="156" key="GridCell.Tab.1.bottom" timestamp="1591252056084">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="156" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586199440308" />
-    <state width="1323" height="156" key="GridCell.Tab.1.left" timestamp="1586199440307">
+    <state width="1323" height="156" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591252056084" />
+    <state width="1323" height="156" key="GridCell.Tab.1.center" timestamp="1591252056084">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="156" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586199440307" />
-    <state width="1323" height="156" key="GridCell.Tab.1.right" timestamp="1586199440308">
+    <state width="1323" height="156" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1591252056084" />
+    <state width="1323" height="156" key="GridCell.Tab.1.left" timestamp="1591252056084">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="156" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586199440308" />
-    <state width="1323" height="156" key="GridCell.Tab.2.bottom" timestamp="1586199440310">
+    <state width="1323" height="156" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1591252056084" />
+    <state width="1323" height="156" key="GridCell.Tab.1.right" timestamp="1591252056084">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="156" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586199440310" />
-    <state width="1323" height="156" key="GridCell.Tab.2.center" timestamp="1586199440309">
+    <state width="1323" height="156" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1591252056084" />
+    <state width="1323" height="156" key="GridCell.Tab.2.bottom" timestamp="1591252056085">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="156" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1586199440309" />
-    <state width="1323" height="156" key="GridCell.Tab.2.left" timestamp="1586199440309">
+    <state width="1323" height="156" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1591252056085" />
+    <state width="1323" height="156" key="GridCell.Tab.2.center" timestamp="1591252056085">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="156" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1586199440309" />
-    <state width="1323" height="156" key="GridCell.Tab.2.right" timestamp="1586199440310">
+    <state width="1323" height="156" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1591252056085" />
+    <state width="1323" height="156" key="GridCell.Tab.2.left" timestamp="1591252056085">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="156" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1586199440310" />
-    <state x="513" y="178" key="NewPhpClassDialog" timestamp="1590156613068">
+    <state width="1323" height="156" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1591252056085" />
+    <state width="1323" height="156" key="GridCell.Tab.2.right" timestamp="1591252056085">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="513" y="178" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1590156613068" />
-    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1589744510310">
+    <state width="1323" height="156" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1591252056085" />
+    <state x="513" y="178" key="NewPhpClassDialog" timestamp="1594041977076">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1589744510310" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1589995310001">
+    <state x="513" y="178" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1594041977076" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1592835999577">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589995310001" />
-    <state x="406" y="0" width="553" height="688" key="refactoring.ChangeSignatureDialog" timestamp="1585505439122">
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1592835999577" />
+    <state x="184" y="6" key="SettingsEditor" timestamp="1591198392792">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="406" y="0" width="553" height="688" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1585505439122" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1590001279515">
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591198392792" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1594035848684">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1590001279515" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1586241479110">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1594035848684" />
+    <state x="406" y="0" width="553" height="688" key="refactoring.ChangeSignatureDialog" timestamp="1594104515566">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1586241479110" />
+    <state x="406" y="0" width="553" height="688" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1594104515566" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1591781543487">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1591781543487" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594102349403">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1594102349403" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/nirs_com@application.xml" NAME="application Coverage Results" MODIFIED="1590678411051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

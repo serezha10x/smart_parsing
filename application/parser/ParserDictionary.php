@@ -2,47 +2,40 @@
 
 
 namespace application\parser;
-//require_once($_SERVER['DOCUMENT_ROOT'] . '/application/frameworks/phpmorphy-0.3.7/src/common.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php");
 
+use application\config\MorphyConfig;
 use phpMorphy;
 use phpMorphy_Exception;
 
 
-class ParserDictionary
+final class ParserDictionary extends Parser
 {
+    protected $text;
     private $key_words;
-    private $text;
     private $morphy;
     private $num_max = 3;
 
+
     public function __construct(&$text) {
+        parent::__construct($text);
         $this->key_words = array();
-        $this->text = $text;
     }
 
-    public function run()
+
+    public function parse()
     {
-        $dir = $_SERVER['DOCUMENT_ROOT'] . "/vendor/cijic/phpmorphy/libs/phpmorphy/dicts";
-
-        $lang = 'ru_RU';
-
         try {
-            $this->morphy = new phpMorphy($dir, $lang);
+            $this->morphy = MorphyConfig::setMorphy('RU_ru');
         } catch(phpMorphy_Exception $e) {
             die('Error occured while creating phpMorphy instance: ' . $e->getMessage());
         }
 
-        // убираем все, кроме букв
-        $str_freq  = preg_replace('@([^А-Яа-яA-Za-z\s\-])@u', '', $this->text);
-        // убираем все лишние пробелы
-        $str_freq  = preg_replace('@\s{2,}@u', ' ', $str_freq);
-        // разбиваем строку по пробелам
-        $arr_words = preg_split("@ @u", $str_freq);
+        $arr_words = $this->tokenize($this->text);
 
         $count = count($arr_words);
         // получаем части речи, необходимые для парсинга
-        $need_words = require __DIR__ . "/need_words.php";
+        $need_words = require __DIR__ . "/parser_config/need_part_speech.php";
 
         $array_defis = array();
 
@@ -138,7 +131,7 @@ class ParserDictionary
             }
         }
 
-        $stop_words = require ($_SERVER['DOCUMENT_ROOT'] . '/application/parser/stop_words.php');
+        $stop_words = require($_SERVER['DOCUMENT_ROOT'] . '/application/parser/parser_config/stop_words.php');
         foreach ($stop_words as $word) {
             $this->key_words = array_diff($this->key_words, array($word));
         }
@@ -151,6 +144,16 @@ class ParserDictionary
         }
         $dict_parse_text .= "<br><br>";
         return $dict_parse_text;
+    }
+
+
+    private function tokenize(string &$text) : array {
+        // убираем все, кроме букв
+        $str_freq  = preg_replace('@([^А-Яа-яA-Za-z\s\-])@u', '', $text);
+        // убираем все лишние пробелы
+        $str_freq  = preg_replace('@\s{2,}@u', ' ', $str_freq);
+        // разбиваем строку по пробелам
+        return preg_split("@ @u", $str_freq);
     }
 
 

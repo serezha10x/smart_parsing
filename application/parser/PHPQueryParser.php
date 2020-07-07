@@ -3,29 +3,23 @@
 
 namespace application\parser;
 
+use phpQuery;
+
 require_once($_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php");
 
 
 class PHPQueryParser
 {
-    private $filter;
-    private $selector;
-    private $global_url;
-    private $word;
 
-    /**
-     * PHPQueryParser constructor.
-     * @param string $filter
-     * @param string $global_url
-     * @param string $word
-     */
-
-    public function __construct(string $filter, string $selector,  string $global_url, string $word)
-    {
-        $this->filter = $filter;
-        $this->global_url = $global_url;
-        $this->word = $word;
-        $this->selector = $selector;
+    public function ParseText(&$text, string $tags) : string {
+        try {
+            $doc = phpQuery::newDocument($text);
+            $parse_text = $doc->find($tags)->text();
+            phpQuery::unloadDocuments();
+            return $parse_text;
+        } catch (\Exception $ex) {
+            return $ex->getMessage();
+        }
     }
 
 
@@ -46,15 +40,15 @@ class PHPQueryParser
 
             \phpQuery::newDocument($html);
 
-            $synonyms = pq($this->filter)->find($this->selector)->text();
+            $synonyms = pq('div.mw-parser-output')->find('a')->text();
 
-            $arr_synonyms = preg_split("@\n@u", $synonyms, $limit, PREG_SPLIT_NO_EMPTY);
+            //$arr_synonyms = preg_split("@\n@u", $synonyms, $limit, PREG_SPLIT_NO_EMPTY);
 
-            var_dump($arr_synonyms);
+            //var_dump($arr_synonyms);
 
             \phpQuery::unloadDocuments();
 
-            return $arr_synonyms;
+            return stripos('comput', $synonyms) === FALSE ? false : true;
 
         } catch (\Exception $ex) {
             echo $ex->getMessage();

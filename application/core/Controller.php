@@ -3,6 +3,7 @@
 namespace application\core;
 
 use application\core\View;
+use application\models\AccountModel;
 
 
 abstract class Controller {
@@ -18,15 +19,13 @@ abstract class Controller {
         if (!$this->checkAcl()) {
             View::errorCode(403);
         }
-        $this->model = $this->loadModel($route['controller']);
-        if ($this->model != null) {
-            $this->model->check_user($_COOKIE['login'], $_COOKIE['password']);
-        }
+        $this->model = new AccountModel();//$this->loadModel($route['controller']);
+        $this->model->check_user($_COOKIE['login'], $_COOKIE['password']);
         $this->view = new View($route);
     }
 
     public function loadModel($name) {
-        $path = 'application\models\\'.ucfirst($name);
+        $path = 'application\models\\'.ucfirst($name).'Model';
         if (class_exists($path)) {
             return new $path;
         }
@@ -43,7 +42,7 @@ abstract class Controller {
         elseif (!isset($_COOKIE['login']) and !isset($_COOKIE['isAuthorized']) and $this->isAcl('guest')) {
             return true;
         }
-        elseif (isset($_COOKIE['login']) and isset($_COOKIE['isAuthorized']) and $_COOKIE['isAdmin'] != 0 and $this->isAcl('admin')) {
+        elseif (isset($_COOKIE['login']) and $_COOKIE['is_admin'] != 0 and $this->isAcl('admin')) {
             return true;
         }
         return false;

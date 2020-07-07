@@ -3,10 +3,52 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="App\" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/adam-lutka/php-enum" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/adam-lutka/php-wndb" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/addwiki/mediawiki-api-base" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/addwiki/mediawiki-datamodel" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/addwiki/wikibase-api" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/camspiers/porter-stemmer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/cijic/phpmorphy" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/data-values/data-values" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/data-values/serialization" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/diff/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/jaeger/phpquery-single" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jeremeamia/superclosure" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/php-di/invoker" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/php-di/php-di" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/php-di/phpdoc-reader" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/serialization/serialization" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/smalot/pdfparser" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/debug" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php56" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-util" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/tecnickcom/tcpdf" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/textrazor/textrazor-php" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/vanderlee/php-sentence" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/wamania/php-stemmer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/wikibase/data-model" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/wikibase/data-model-serialization" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/wikibase/data-model-services" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/wikimedia/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yooper/nicknames" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yooper/php-text-analysis" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yooper/stop-words" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

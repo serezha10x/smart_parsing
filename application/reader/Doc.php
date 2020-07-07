@@ -6,13 +6,13 @@
 // Copyright 2009
 
 // Чтобы работать с doc, мы дожны уметь работать с WCBFF не так ли?
-namespace application\parser;
+namespace application\reader;
 
 
 // Класс для работы с Microsoft Word Document (в народе doc), расширяет
 // Windows Compound Binary File Format. Давайте попробуем найти текст и
 // здесь
-class doc extends cfb {
+class Doc extends Cfb {
 	// Функция parse расширяет родительскую функцию и на выходе получает
 	// текст из данного файла. Если что-то пошло не так - возвращает false
 	public function parse() {

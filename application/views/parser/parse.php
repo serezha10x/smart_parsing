@@ -15,8 +15,11 @@
             <button class="btn btn-primary any-btn" type="submit" value="Upload" name="submit">Разобрать текст</button>
         </div>
     </form>
-    <div class="parse-text"><?php echo $parse_regex_text; ?></div>
-    <div class="parse-text"><?php echo $dict_parse_text; ?></div>
-    <div class="parse-text"><?php echo $text; ?></div>
+    <div class="parse-text"><?= $parse_regex_text; ?></div>
+    <div class="parse-text"><?= $dict_parse_text; ?></div>
+    <div class="parse-text"><?= $php_analysis_text; ?></div>
+    <div class="parse-text"><?= $semantic_wordnet_text; ?></div>
+    <br/>
+    <div class="parse-text"><?= $text; ?></div>
 </body>
 </html>

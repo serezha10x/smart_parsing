@@ -9,9 +9,9 @@
 // Windows Compound Binary File Format. Зачем это нужно? На основе этого
 // формата строятся такие "вкусные" файлы как .doc, .xls и .ppt. Поехали, смотреть, как
 // это устроено!
-namespace application\parser;
+namespace application\reader;
 
-class cfb {
+class Cfb {
 	// В эту переменную будет прочитано содержимое файла, который нужно расшифровать.
 	protected $data = "";
 
