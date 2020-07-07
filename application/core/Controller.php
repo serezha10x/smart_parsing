@@ -19,8 +19,8 @@ abstract class Controller {
         if (!$this->checkAcl()) {
             View::errorCode(403);
         }
-        $this->model = new AccountModel();//$this->loadModel($route['controller']);
-        $this->model->check_user($_COOKIE['login'], $_COOKIE['password']);
+       // $this->model = new AccountModel();//$this->loadModel($route['controller']);
+       // $this->model->check_user($_COOKIE['login'], $_COOKIE['password']);
         $this->view = new View($route);
     }
 

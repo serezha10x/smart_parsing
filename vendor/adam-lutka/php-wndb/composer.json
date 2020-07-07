@@ -1,0 +1,40 @@
+{
+	"name": "adam-lutka/php-wndb",
+	"description": "PHP API for WordNet (https://wordnet.princeton.edu/)",
+	"type": "library",
+	"keywords": ["wordnet", "synset"],
+	"license": "MIT",
+	"minimum-stability": "stable",
+	"authors": [
+		{
+			"name": "Adam Lutka",
+			"email": "adam.lutka@gmail.com",
+			"role": "Developer"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"AL\\PhpWndb\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"AL\\PhpWndb\\Examples\\": "examples/",
+			"AL\\PhpWndb\\Tests\\": "tests/"
+		}
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^7.5",
+		"phpstan/phpstan": "^0.12.14",
+		"phpstan/phpstan-phpunit": "^0.12.6",
+		"phpstan/extension-installer": "^1.0"
+	},
+	"require": {
+		"adam-lutka/php-enum": "^1.0.2",
+		"php-di/php-di": "^6.0"
+	},
+	"scripts": {
+		"phpstan": "vendor/bin/phpstan analyse src/ tests/ examples/ --level=max",
+		"tests": "vendor/bin/phpunit"
+	}
+}

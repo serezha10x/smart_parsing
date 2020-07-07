@@ -14,7 +14,7 @@ final class ParserDictionary extends Parser
     protected $text;
     private $key_words;
     private $morphy;
-    private $num_max = 3;
+    private $num_max = 5;
 
 
     public function __construct(&$text) {

@@ -2,39 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98547bea-cd1c-4fc4-b071-d1078c3bf592" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/config/Constants.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/nirs.com.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nirs.com.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/acl/parser.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/acl/parser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/const.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/formats.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/formats.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/AccountController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/ParserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/ParserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/core/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/core/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/core/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/AccountModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/AccountModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/parser/PHPQueryParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/parser/PHPQueryParser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/parser/ParserDictionary.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/parser/ParserDictionary.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/parser/ParserRegex.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/parser/ParserRegex.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/parser/Reader.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/parser/cfb.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/reader/Cfb.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/parser/doc.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/reader/Doc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/parser/need_words.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/parser/parser_config/need_part_speech.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/parser/regex_patterns.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/parser/parser_config/regex_patterns.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/parser/stop_words.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/parser/parser_config/stop_words.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/scripts/file_upload.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/scripts/file_upload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/scripts/login_handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/scripts/login_handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/layouts/default.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/layouts/default.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/main/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/main/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/parser/parse.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/parser/parse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/wiki/WikipediaApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/wiki/WikipediaApi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/parser/parser_config/regex_patterns.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/parser/parser_config/regex_patterns.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +213,7 @@
       <workItem from="1592247224487" duration="27385000" />
       <workItem from="1592420008165" duration="2242000" />
       <workItem from="1592463084302" duration="16018000" />
-      <workItem from="1594035844545" duration="14815000" />
+      <workItem from="1594035844545" duration="16453000" />
     </task>
     <task id="LOCAL-00001" summary="Add PHPMorphy">
       <created>1585660650850</created>

@@ -3,7 +3,6 @@
 namespace application\parser;
 
 
-use application\analysis\PHPTextAnalysis;
 use application\semantic\ISemanticParsable;
 use application\semantic\WikiSemantic;
 use application\semantic\WordNetSemantic;

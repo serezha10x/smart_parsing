@@ -10,7 +10,7 @@ abstract class Model {
 
     protected $pdo;
 	protected static $USERNAME = 'root';
-	protected static $PASSWORD = '';
+	protected static $PASSWORD = 'root';
 	protected static $HOST = '127.0.0.1';
 	protected static $DBNAME = 'ParseProject';
 
