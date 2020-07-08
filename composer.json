@@ -9,7 +9,8 @@
         "ext-json": "*",
         "ext-curl": "*",
         "ext-zip": "*",
-        "ext-iconv": "*"
+        "ext-iconv": "*",
+        "ext-ctype": "*"
     },
     "config": {
         "platform": {

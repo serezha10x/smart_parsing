@@ -10,10 +10,13 @@ class PdfReader implements IReader
     public function read(string $filename): string
     {
         $parser = new \Smalot\PdfParser\Parser();
-        $pdf    = $parser->parseFile($filename);
-
-        $text = $pdf->getText();
-        return $text;
-        return pdf2text($filename);
+        try {
+            $pdf = $parser->parseFile($filename);
+        } catch (\Exception $e) {
+            echo $e->getMessage();
+            return '';
+        }
+        var_dump($pdf->getText());
+        return $pdf->getText();
     }
 }

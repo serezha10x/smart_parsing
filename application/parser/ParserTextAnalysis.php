@@ -78,6 +78,7 @@ class ParserTextAnalysis extends Parser
             $max_freq = array_splice($freqDist->getKeyValuesByFrequency(), 0, 20);
         } catch (InvalidParameterSizeException $e) {
             echo $e->getMessage();
+            return [''];
         }
 
         $arr = array();
@@ -97,8 +98,7 @@ class ParserTextAnalysis extends Parser
     }
 
 
-    public function parse()
-    {
+    public function parse() {
         return 'Частотный анализ (PHPAnalysis): ' . implode($this->getFreq()[0], ', ');
     }
 }
